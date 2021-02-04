@@ -8,6 +8,11 @@ Window {
     title: qsTr("Hello World")
     color: "black"
     OssiaSlider {
-        x: 100; y: 100
+        x: 10; y: 100
     }
+    OssiaSlider {
+        x: 10; y: 150
+        controlName: "toto"
+    }
+
 }

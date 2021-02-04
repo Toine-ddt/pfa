@@ -1,30 +1,48 @@
 import QtQuick 2.0
-
 import QtQuick.Controls 2.15
+import QtQuick.Controls.Styles 1.4
 
 Item {
+    property string controlName: "ControlName"
     Slider {
         id: control
         value: 0.5
-        handle: Rectangle{} // No handle
+
+        Text {
+            y: control.y - 15
+            text: controlName
+            color: "#a7dd0d"
+        }
+        Text {
+            y: control.y - 15
+            text: control.value.toFixed(3)
+            color: "#ffedb6"
+            font.bold: true
+            width: control.width
+            horizontalAlignment: Text.AlignHCenter
+        }
+
+
+
+        handle: Rectangle {} // No handle
 
         background: Rectangle {
             x: control.leftPadding
-            y: control.topPadding + control.availableHeight / 2 - height / 2
-            implicitWidth: 200
-            implicitHeight: 4
+            //y: control.topPadding + control.availableHeight / 2 - height / 2
+            implicitWidth: 500
+            implicitHeight: 5
             width: control.availableWidth
-            height: implicitHeight *4
-            radius: 0
-            color: "#808080"
+            height: implicitHeight * 4
+            color: "#363636"
+            radius: 2
 
             Rectangle {
-                width: control.visualPosition * parent.width
-                height: parent.height
-                color: '#f6a019'
-                radius: 0
+                x: y
+                y: (parent.height - height) / 2
+                width: control.visualPosition * parent.width - y
+                height: parent.height - 4
+                color: '#e0b01e'
             }
         }
-
     }
 }
