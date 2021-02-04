@@ -1,6 +1,5 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
-import QtQuick.Controls.Styles 1.4
 
 Item {
     property string controlName: "ControlName"
@@ -9,12 +8,12 @@ Item {
         value: 0.5
 
         Text {
-            y: control.y - 15
+            y: control.y - 20
             text: controlName
             color: "#a7dd0d"
         }
         Text {
-            y: control.y - 15
+            y: control.y - 20
             text: control.value.toFixed(3)
             color: "#ffedb6"
             font.bold: true
@@ -28,7 +27,7 @@ Item {
 
         background: Rectangle {
             x: control.leftPadding
-            //y: control.topPadding + control.availableHeight / 2 - height / 2
+            y: control.topPadding + control.availableHeight / 2 - height / 2
             implicitWidth: 500
             implicitHeight: 5
             width: control.availableWidth

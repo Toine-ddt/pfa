@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>OssiaSlider.qml</file>
+	<file>OssiaPosition.qml</file>
+        <file>Timeline.qml</file>
     </qresource>
 </RCC>

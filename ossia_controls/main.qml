@@ -7,6 +7,7 @@ Window {
     visible: true
     title: qsTr("Hello World")
     color: "black"
+
     OssiaSlider {
         x: 10; y: 100
     }
@@ -14,5 +15,8 @@ Window {
         x: 10; y: 150
         controlName: "toto"
     }
-
+    Timeline {
+        x: 10; y: 400
+        totalTime: 100000
+    }
 }
