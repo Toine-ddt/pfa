@@ -15,8 +15,9 @@ Window {
         x: 10; y: 150
         controlName: "toto"
     }
-    Timeline {
+    OssiaTimeline {
         x: 10; y: 400
         totalTime: 100000
     }
+    MyButton2 {}
 }

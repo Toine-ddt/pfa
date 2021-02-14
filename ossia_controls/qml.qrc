@@ -2,7 +2,17 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>OssiaSlider.qml</file>
-	<file>OssiaPosition.qml</file>
-        <file>Timeline.qml</file>
-    </qresource>
+        <file>OssiaPosition.qml</file>
+        <file>OssiaTimeline.qml</file>
+	<file>OssiaPositionPoint.qml</file>
+	<file>MyButton2.qml</file>
+	<file>Icons/reinitialize_off.svg</file>
+	<file>Icons/stop_off.svg</file>
+	<file>Icons/play_glob_off.svg</file>
+	<file>Icons/play_off.svg</file>
+	<file>Icons/play_glob_on.svg</file>
+	<file>Icons/pause_on.svg</file>
+	<file>Icons/stop_on.svg</file>
+	<file>Icons/reinitialize_on.svg</file>
+</qresource>
 </RCC>
